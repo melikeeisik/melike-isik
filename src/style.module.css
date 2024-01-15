@@ -1,0 +1,74 @@
+.home{
+    background-image: url(C:\Users\user\OneDrive\Masaüstü\my-website\src\assets\images\bg.webp);
+    background-size:cover;
+    height: 690px;
+    position: relative;
+    font-family: Raleway,sans-serif
+}
+.header{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    z-index: 999;
+}
+.headerIcon{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+    width:50px;
+    margin-left: 10px;
+}
+.headerList{
+    display: flex;
+    margin-right: 10px;
+}
+.headerList ul {
+    list-style: none;
+    display: flex;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+.headerList ul li{
+    padding:0px 10px;
+}
+.homeBackground{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+.homeContainer{
+    position: absolute;
+    color: #fff;
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    top:35%;
+    left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.homeContainer p{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 0px;
+}
+.socialMediaContainer{
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+}
