@@ -1,11 +1,11 @@
 import React,{useState, useEffect} from 'react'
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import About from './About'
 import style from "../style.module.css"
-import { Link } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-library.add(faGithub, faInstagram, faLinkedinIn, faStar)
+library.add(faGithub, faInstagram, faLinkedinIn)
 function Home() {
     const [myName, setMyName] = useState("")
     const [index,setIndex] = useState(0)
@@ -24,27 +24,6 @@ function Home() {
 ;
   return (
     <div>
-        <div className={style.header}>
-            <div className={style.headerIcon}>
-                <FontAwesomeIcon icon="fa-solid fa-star" />
-            </div>
-            <div className={style.headerList}>
-                <ul>
-                    <li>
-                        <Link style={{textDecoration:"none", color:"#fff"}}>Anasayfa</Link>
-                    </li>
-                    <li>
-                        <Link style={{textDecoration:"none", color:"#fff"}}>Hakkımda</Link>
-                    </li>
-                    <li>
-                        <Link style={{textDecoration:"none", color:"#fff"}}>Deneyimlerim</Link>
-                    </li>
-                    <li>
-                        <Link style={{textDecoration:"none", color:"#fff"}}>İletişim</Link>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div className={style.home}>
             <div className={style.homeBackground}></div>
             <div className={style.homeContainer}>
