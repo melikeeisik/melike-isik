@@ -84,18 +84,11 @@
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
-    border-bottom: 1px solid #999;
 }
-.seperate{
-    color: #2196f3 ;
-    font-weight: bold;
-    font-size: 60px;
-    position: absolute;
-    top: 3%;
-    left: 42%;
-}
+
 .pageTitle{
     position: relative;
+    padding-bottom: 10px;
 }
 .picture{
     width: 200px;
@@ -204,6 +197,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 .experinceContainer{
     padding-top: 100px;
@@ -258,4 +252,65 @@
     color: #337ab7;
     font-size: 13px;
 }
-
+.contactPage{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding-top: 100px;
+    width: 500px;
+    padding-bottom: 100px;
+}
+.contactTitle {
+    position: relative;
+}
+.contactTitle span{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px; 
+}
+.contactText{
+    padding-top: 27px;
+    font-size: 17px;
+    color: #777;
+    width: 600px;
+    text-align: center;
+    font-family: Athiti,sans-serif;
+    padding-bottom: 20px;
+}
+.seperate{
+    background-color:#999 ;
+    width: 80px;
+    height: 0.5px;
+    position: relative;
+}
+.seperate div{
+    position: absolute;
+    top:-48px;
+    left: 35%;
+    color: #2196f3 ;
+    font-weight: bold;
+    font-size: 60px;
+}
+.contactPlatform{
+    width: 600px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.platform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.platform span{
+    font-size: 14px;
+    font-family: Athiti,sans-serif;
+    color: #337ab7;
+}
+.platform a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Athiti,sans-serif;
+    color: #337ab7;
+}

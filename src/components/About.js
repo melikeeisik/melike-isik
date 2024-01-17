@@ -6,7 +6,9 @@ function About() {
     <div className={style.about} >
       <div className={style.pageTitle}>
         <span style={{fontSize:"35px"}}>Hakkımda</span>
-        <div style={{ top: "19%"}} className={style.seperate}>-</div>
+      </div>
+      <div className={style.seperate}>
+            <div>-</div>
       </div>
       <div className={style.cv}>
         <div className={style.picture}>

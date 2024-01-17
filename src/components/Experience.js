@@ -9,8 +9,10 @@ function Experience() {
     <div className={style.experince}>
       <div className={style.pageTitle}>
         <span>Deneyimlerim</span>
-        <div className={style.seperate}>-</div>
       </div>
+      <div className={style.seperate}>
+            <div>-</div>
+        </div>
       <div className={style.experinceContainer}>
         <div className={style.experinceBox}>
             <div className={style.companyBox}>
@@ -20,7 +22,7 @@ function Experience() {
             <div className={style.experinceSeperate}>
                 <div style={{position:"relative"}}>
                     <FontAwesomeIcon style={{color:"#2196f3", position:"absolute", top:"20px",fontSize:"20px"}} icon="fa-circle" />
-                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:"2.5px"}}></div>
+                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:"3px"}}></div>
                     <div style={{backgroundColor:"#2196f3",width:"0.5px" , height:"100px", position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>
@@ -41,7 +43,7 @@ function Experience() {
             <div className={style.experinceSeperate}>
                 <div style={{position:"relative"}}>
                     <FontAwesomeIcon style={{color:"#2196f3", position:"absolute",top:"20px", fontSize:"20px"}} icon="fa-circle" />
-                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"23px", left:"2.5px"}}></div>
+                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"23px", left:"3px"}}></div>
                     <div style={{backgroundColor:"#2196f3",width:"0.5px" , height:"100px", position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>
@@ -62,7 +64,7 @@ function Experience() {
             <div className={style.experinceSeperate}>
                 <div style={{position:"relative"}}>
                 <FontAwesomeIcon style={{color:"#2196f3", position:"absolute", top:"20px",fontSize:"20px"}} icon="fa-circle" />
-                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:"2.5px"}}></div>
+                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:"3px"}}></div>
                     <div style={{backgroundColor:"#2196f3",width:"0.5px" , height:"120px", position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>
@@ -84,7 +86,7 @@ function Experience() {
             <div className={style.experinceSeperate}>
                 <div style={{position:"relative"}}>
                     <FontAwesomeIcon style={{color:"#2196f3", position:"absolute", top:"18px",fontSize:"20px"}} icon="fa-circle" />
-                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"20.5px", left:"2.5px"}}></div>
+                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"20.5px", left:"3px"}}></div>
                     <div style={{backgroundColor:"#2196f3",width:"0.5px" , position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>

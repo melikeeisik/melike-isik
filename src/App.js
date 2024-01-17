@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import './index.css'
 import Experience from './components/Experience';
+import Contact from './components/Contact';
 function App() {
 
 
@@ -16,6 +17,7 @@ function App() {
           <Home/>
           <About/>
           <Experience/>
+          <Contact/>
         </div>
       </div>
   );
