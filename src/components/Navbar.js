@@ -6,10 +6,10 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faStar)
 
-function Navbar() {
+function Navbar({sticky}) {
   return (
     <div>
-      <div className={style.header}>
+      <div className={sticky ? style.headerSticky : style.header}>
             <div className={style.headerIcon}>
                 <FontAwesomeIcon icon="fa-solid fa-star" />
             </div>

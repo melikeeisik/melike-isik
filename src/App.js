@@ -8,12 +8,33 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 function App() {
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const [headerSticky, setHeaderSticky] = useState(false)
+  const handleScroll = () =>{
+    setScrollPosition(window.scrollY)
+  }
 
+  useEffect(() =>{
+    setHeaderSticky(false)
+    window.addEventListener("scroll", handleScroll)
+    return(() =>{
+      window.removeEventListener("scroll", handleScroll)
+    })
+  }, [])
 
+  useEffect(() =>{
+    if(scrollPosition >= 80){
+      setHeaderSticky(true)
+    }else{
+      setHeaderSticky(false)
+    }
+  }, [scrollPosition])
+
+  console.log(scrollPosition)
 
   return (
       <div>
-        <Navbar />
+        <Navbar sticky={headerSticky} />
         <div>
           <Home/>
           <About/>
