@@ -78,24 +78,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
-.aboutTitle span{
-    font-size: 35px;
+.pageTitle span{
+    font-size: 30px;
     font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
 }
 .seperate{
     color: #2196f3 ;
     font-weight: bold;
     font-size: 60px;
     position: absolute;
-    top: 18.5px;
+    top: 3%;
     left: 42%;
 }
-.aboutTitle{
-    padding: 10px 0px;
-    border-bottom: 1px solid #999;
+.pageTitle{
     position: relative;
-
 }
 .picture{
     width: 200px;
@@ -198,6 +198,64 @@
     position: relative;
 }
 .experince{
+    padding-top: 100px;
     background-color: #f4f4f4;
-    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.experinceContainer{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.experinceBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.companyBox{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+
+}
+.companyBox h2{
+    font-family: Raleway,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.companyBox a{
+    font-family: Athiti,sans-serif;
+    text-decoration: none;
+    color: #337ab7;
+    font-size: 13px;
+}
+.experinceSeperate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 0px 70px;
+}
+.positionBox{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.positionBox h2{
+    font-family: Raleway,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.positionBox span{
+    font-family: Athiti,sans-serif;
+    color: #337ab7;
+    font-size: 13px;
+}
+

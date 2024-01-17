@@ -4,9 +4,9 @@ import style from "../style.module.css"
 function About() {
   return (
     <div className={style.about} >
-      <div className={style.aboutTitle}>
-        <span>Hakkımda</span>
-        <div className={style.seperate}>-</div>
+      <div className={style.pageTitle}>
+        <span style={{fontSize:"35px"}}>Hakkımda</span>
+        <div style={{ top: "19%"}} className={style.seperate}>-</div>
       </div>
       <div className={style.cv}>
         <div className={style.picture}>
