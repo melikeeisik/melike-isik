@@ -21,11 +21,11 @@
     color: #fff;
     height: 100%;
     width:50px;
-    margin-left: 10px;
+    margin-left: 50px;
 }
 .headerList{
     display: flex;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 .headerList ul {
     list-style: none;
@@ -37,6 +37,9 @@
 .headerList ul li{
     padding:0px 10px;
     font-weight: 500;
+    font-family: Athiti,sans-serif;
+    font-size: 16px;
+    letter-spacing: .09em;
 }
 .homeBackground{
     background-color: #000;
@@ -313,4 +316,26 @@
     font-size: 14px;
     font-family: Athiti,sans-serif;
     color: #337ab7;
+}
+.footer{
+    background-color: #111;
+}
+.socialMediaContainer{
+    padding-top: 80px;
+    margin: auto;
+}
+.socialMediaBox{
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    position: relative;
+}
+.footerText{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-family:Athiti,sans-serif; 
+    color: #777;
+    font-size: 14.5px;
+    padding-bottom: 70px;
 }

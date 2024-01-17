@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import './index.css'
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 function App() {
 
 
@@ -18,6 +19,7 @@ function App() {
           <About/>
           <Experience/>
           <Contact/>
+          <Footer/>
         </div>
       </div>
   );
