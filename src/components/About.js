@@ -28,6 +28,27 @@ function About() {
           </div>
         </div>
       </div>
+      <div className={style.skillsContainer}>
+          <h2>Yazılım</h2>
+          <div className={style.skillsBox}>
+            <span>REACT/HTML/CSS/JS</span>
+            <div style={{width:"90%"}} className={style.skillsBar}>
+              <div className={style.dataProgress}>90%</div>
+            </div>
+          </div>
+          <div className={style.skillsBox}>
+            <span>PYTHON</span>
+            <div style={{width:"80%"}} className={style.skillsBar}>
+              <div className={style.dataProgress}>80%</div>
+            </div>
+          </div>
+          <div className={style.skillsBox}>
+            <span>FLUTTER</span>
+            <div style={{width:"60%"}} className={style.skillsBar}>
+              <div className={style.dataProgress}>60%</div>
+            </div>
+          </div>
+      </div>
     </div>
   )
 }
