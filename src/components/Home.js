@@ -1,6 +1,4 @@
 import React,{useState, useEffect} from 'react'
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
-import About from './About'
 import style from "../style.module.css"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -29,15 +27,15 @@ function Home() {
             <div className={style.homeContainer}>
                 <p>{myName}</p>
                 <div className={style.socialMediaContainer}>
-                    <div>
-                        <FontAwesomeIcon icon="fa-brands fa-github" />
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon="fa-brands fa-instagram" />
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon="fa-brands fa-linkedin-in" />
-                    </div>
+                    <a target='_self' href='https://github.com/melikeeisik'>
+                        <FontAwesomeIcon color='#fff' icon="fa-brands fa-github" />
+                    </a>
+                    <a target='_self' href='https://www.instagram.com/melikee.isik/'>
+                        <FontAwesomeIcon color='#fff' icon="fa-brands fa-instagram" />
+                    </a>
+                    <a target='_self' href='https://www.linkedin.com/in/melikeeisik/'>
+                        <FontAwesomeIcon color='#fff' icon="fa-brands fa-linkedin-in" />
+                    </a>
                 </div>
             </div>
         </div>
