@@ -11,34 +11,49 @@ function App() {
   const pageNameList = ["Anasayfa", "Hakkımda", "Deneyimlerim", "İletişim"]
   const [scrollPosition, setScrollPosition] = useState(0)
   const [headerSticky, setHeaderSticky] = useState(false)
- 
-  const [borderBottom , setBorderBottom] = useState("")
- 
+  const [page, setPage] = useState("")
   const handleScroll = () =>{
     setScrollPosition(window.scrollY)
   }
 
   useEffect(() =>{
     setHeaderSticky(false)
-
+    setPage(pageNameList[0])
     window.addEventListener("scroll", handleScroll)
     return(() =>{
       window.removeEventListener("scroll", handleScroll)
     })
   }, [])
 
+  console.log(scrollPosition)
+  console.log("page",page)
   useEffect(() =>{
-    if(scrollPosition >= 80){
-      setHeaderSticky(true)
-    }else{
-      setHeaderSticky(false)
+    setPage(pageNameList[0])
+    switch (true) {
+      case scrollPosition >=2500:
+        setPage(pageNameList[3])
+        break;
+      case scrollPosition >= 1700:
+        setPage(pageNameList[2]);
+        break;
+      case scrollPosition >= 600:
+        setPage(pageNameList[1]);
+        setHeaderSticky(true);
+        break
+      case scrollPosition >= 80:
+        setHeaderSticky(true)
+        setPage(pageNameList[0]);
+        break;
+      default:
+        setHeaderSticky(false)
+        break;
     }
   }, [scrollPosition])
 
 
   return (
       <div>
-        <Navbar sticky={headerSticky} />
+        <Navbar sticky={headerSticky} page={page}/>
         <div>
           <Home/>
           <About/>
