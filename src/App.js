@@ -8,14 +8,19 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 function App() {
+  const pageNameList = ["Anasayfa", "Hakkımda", "Deneyimlerim", "İletişim"]
   const [scrollPosition, setScrollPosition] = useState(0)
   const [headerSticky, setHeaderSticky] = useState(false)
+ 
+  const [borderBottom , setBorderBottom] = useState("")
+ 
   const handleScroll = () =>{
     setScrollPosition(window.scrollY)
   }
 
   useEffect(() =>{
     setHeaderSticky(false)
+
     window.addEventListener("scroll", handleScroll)
     return(() =>{
       window.removeEventListener("scroll", handleScroll)
@@ -30,7 +35,6 @@ function App() {
     }
   }, [scrollPosition])
 
-  console.log(scrollPosition)
 
   return (
       <div>

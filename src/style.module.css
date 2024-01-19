@@ -24,7 +24,7 @@
     align-items: center;
     background-color: #000;
     top: 0px;
-    color: #fff;
+    color:#a0a0a0;
     z-index: 999;
 }
 .headerIcon{
@@ -42,7 +42,6 @@
 .headerList ul {
     list-style: none;
     display: flex;
-    color: #fff;
     padding: 0px;
     margin: 0px;
 }
@@ -52,6 +51,10 @@
     font-family: Athiti,sans-serif;
     font-size: 16px;
     letter-spacing: .09em;
+    padding-bottom: 5px;
+}
+.headerList ul li:hover{
+    border-bottom: 1.5px solid #2196f3;
 }
 .homeBackground{
     background-color: #000;
@@ -78,6 +81,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    font-family:Raleway,sans-serif;;
     margin: 0px;
 }
 .socialMediaContainer{
