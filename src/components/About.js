@@ -12,7 +12,7 @@ function About() {
       </div>
       <div className={style.cv}>
         <div className={style.picture}>
-          <img src='https://fastly.picsum.photos/id/870/200/300.jpg?blur=2&grayscale&hmac=ujRymp644uYVjdKJM7kyLDSsrqNSMVRPnGU99cKl6Vs' alt='Profile Picture' />
+          <img src='/assets/images/me.jpg' alt='Profile Picture' />
         </div>
         <div className={style.cvText}>
           <div className={style.cvTitle}>Bilgisayar Mühendisi</div>
