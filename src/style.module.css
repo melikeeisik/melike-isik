@@ -182,6 +182,9 @@
     font-size: 11px;
     letter-spacing: 1px;
 }
+.contact:hover{
+    cursor: pointer;
+}
 .skillsContainer{
     padding-top: 80px;
     display: flex;

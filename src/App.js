@@ -82,7 +82,7 @@ function App() {
             <Home/>
           </div>
           <div ref={hakkimdaRef}>
-            <About/>
+            <About scrollToSection={scrollToSection}/>
           </div>
           <div ref={deneyimRef}>
             <Experience/>

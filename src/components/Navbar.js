@@ -8,8 +8,6 @@ library.add(faStar)
 
 function Navbar({scrollToSection, sticky, page}) {
   const list = document.getElementsByTagName("li")
-  console.log(page)
-
   useEffect(() =>{
     [...list].forEach(element => {
       if(element.innerHTML==page){

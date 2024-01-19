@@ -1,8 +1,6 @@
 import React from 'react'
 import style from "../style.module.css"
-
-function About() {
-
+function About({scrollToSection}) {
   const pdfFilePath = process.env.PUBLIC_URL + '/assets/cv/Melike_Isik_CV.pdf';
 
   const openPDFViewer = () => {
@@ -33,7 +31,7 @@ function About() {
             <button onClick={openPDFViewer}  className={style.showCv}>
               CV'Mİ GÖRÜNTÜLE
             </button>
-            <button className={style.contact}>İLETİŞME GEÇELİM</button>
+            <button  onClick={() => scrollToSection("iletisim")} className={style.contact}>İLETİŞME GEÇELİM</button>
           </div>
         </div>
       </div>
