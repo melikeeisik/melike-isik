@@ -53,10 +53,10 @@ function App() {
   useEffect(() =>{
     setPage(pageNameList[0])
     switch (true) {
-      case scrollPosition >=2500:
+      case scrollPosition >=2200:
         setPage(pageNameList[3])
         break;
-      case scrollPosition >= 1700:
+      case scrollPosition >= 1500:
         setPage(pageNameList[2]);
         break;
       case scrollPosition >= 600:
