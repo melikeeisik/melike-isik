@@ -48,8 +48,6 @@ function App() {
     })
   }, [])
 
-  console.log(scrollPosition)
-  console.log("page",page)
   useEffect(() =>{
     setPage(pageNameList[0])
     switch (true) {
@@ -79,7 +77,7 @@ function App() {
         <Navbar scrollToSection={scrollToSection} sticky={headerSticky} page={page}/>
         <div>
           <div ref={anasayfaRef}>
-            <Home/>
+            <Home scrollToSection={scrollToSection}/>
           </div>
           <div ref={hakkimdaRef}>
             <About scrollToSection={scrollToSection}/>

@@ -4,7 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 library.add(faGithub, faInstagram, faLinkedinIn)
-function Home() {
+function Home({scrollToSection}) {
     const [myName, setMyName] = useState("")
     const [index,setIndex] = useState(0)
     const name = " Melike Işık"
@@ -37,6 +37,13 @@ function Home() {
                         <FontAwesomeIcon color='#fff' icon="fa-brands fa-linkedin-in" />
                     </a>
                 </div>
+            </div>
+            <div className={style.scrollArrow} onClick={() =>(scrollToSection("hakkimda"))}>
+                <svg className={style.arrows}>
+                    <path className={style.a1} d="M0 0 L30 32 L60 0"></path>
+                    <path className={style.a2} d="M0 20 L30 52 L60 20"></path>
+                    <path className={style.a3} d="M0 40 L30 72 L60 40"></path>
+                </svg>
             </div>
         </div>
     </div>
