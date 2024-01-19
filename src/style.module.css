@@ -167,10 +167,10 @@
     font-weight: 200;
     font-size: 11px;
     letter-spacing: 1px;
+    color: #2196f3 ;
 }
-.showCv a{
-    text-decoration: none;
-    color: #2196f3;
+.showCv:hover{
+    cursor: pointer;
 }
 .contact{
     color:#fff;

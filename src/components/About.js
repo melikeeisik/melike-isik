@@ -2,6 +2,13 @@ import React from 'react'
 import style from "../style.module.css"
 
 function About() {
+
+  const pdfFilePath = process.env.PUBLIC_URL + '/assets/cv/Melike_Isik_CV.pdf';
+
+  const openPDFViewer = () => {
+    window.open(pdfFilePath, '_blank');
+  };
+
   return (
     <div className={style.about} >
       <div className={style.pageTitle}>
@@ -23,8 +30,8 @@ function About() {
             Özel olarak web, mobil uygulama geliştirme (flutter), yapay zeka ve görüntü işleme çalışmalarıyla ilgileniyorum.
           </div>
           <div className={style.buttonContainer}>
-            <button className={style.showCv}>
-              <a target='_blank' >CV'Mİ GÖRÜNTÜLE</a>
+            <button onClick={openPDFViewer}  className={style.showCv}>
+              CV'Mİ GÖRÜNTÜLE
             </button>
             <button className={style.contact}>İLETİŞME GEÇELİM</button>
           </div>
