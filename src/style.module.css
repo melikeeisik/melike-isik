@@ -1,5 +1,5 @@
 .home{
-    background-image: url(C:\Users\user\OneDrive\Masaüstü\my-website\public\assets\images\bg.webp);
+    background-image: url("../public/assets/images/bg.jpg");
     background-size:cover;
     height: 700px;
     position: relative;
