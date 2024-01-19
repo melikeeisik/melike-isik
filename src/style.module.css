@@ -54,6 +54,7 @@
     padding-bottom: 5px;
 }
 .headerList ul li:hover{
+    cursor: pointer;
     border-bottom: 1.5px solid #2196f3 !important;
 }
 .homeBackground{

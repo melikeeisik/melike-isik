@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState , useRef} from 'react'
 import style from "../style.module.css"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,9 +6,10 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faStar)
 
-function Navbar({sticky, page}) {
+function Navbar({scrollToSection, sticky, page}) {
   const list = document.getElementsByTagName("li")
   console.log(page)
+
   useEffect(() =>{
     [...list].forEach(element => {
       if(element.innerHTML==page){
@@ -29,10 +30,10 @@ function Navbar({sticky, page}) {
             </div>
             <div className={style.headerList}>
                 <ul>
-                    <li >Anasayfa</li>
-                    <li >Hakkımda</li>
-                    <li >Deneyimlerim</li>
-                    <li >İletişim</li>
+                    <li onClick={() => scrollToSection("anasayfa")} >Anasayfa</li>
+                    <li onClick={() => scrollToSection("hakkimda")} >Hakkımda</li>
+                    <li onClick={() => scrollToSection("deneyim")} >Deneyimlerim</li>
+                    <li onClick={() => scrollToSection("iletisim")} >İletişim</li>
                 </ul>
             </div>
         </div>

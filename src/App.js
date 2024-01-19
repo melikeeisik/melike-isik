@@ -8,6 +8,10 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 function App() {
+  const anasayfaRef = useRef(null);
+  const hakkimdaRef = useRef(null);
+  const deneyimRef = useRef(null);
+  const iletisimRef = useRef(null);
   const pageNameList = ["Anasayfa", "Hakkımda", "Deneyimlerim", "İletişim"]
   const [scrollPosition, setScrollPosition] = useState(0)
   const [headerSticky, setHeaderSticky] = useState(false)
@@ -16,6 +20,25 @@ function App() {
     setScrollPosition(window.scrollY)
   }
 
+  const scrollToSection = (section) =>{
+    switch (section) {
+      case 'anasayfa':
+        anasayfaRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'hakkimda':
+        hakkimdaRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case "deneyim":
+        deneyimRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case "iletisim":
+        iletisimRef.current.scrollIntoView({ behavior: 'smooth' });
+        break
+      default:
+        break;
+    }
+  }
+ 
   useEffect(() =>{
     setHeaderSticky(false)
     setPage(pageNameList[0])
@@ -53,13 +76,23 @@ function App() {
 
   return (
       <div>
-        <Navbar sticky={headerSticky} page={page}/>
+        <Navbar scrollToSection={scrollToSection} sticky={headerSticky} page={page}/>
         <div>
-          <Home/>
-          <About/>
-          <Experience/>
-          <Contact/>
-          <Footer/>
+          <div ref={anasayfaRef}>
+            <Home/>
+          </div>
+          <div ref={hakkimdaRef}>
+            <About/>
+          </div>
+          <div ref={deneyimRef}>
+            <Experience/>
+          </div>
+          <div ref={iletisimRef}>
+            <Contact/>
+          </div>
+          <div >
+            <Footer/>
+          </div>
         </div>
       </div>
   );
