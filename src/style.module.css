@@ -392,7 +392,7 @@
 }
 .experinceBox{
     @media screen and  (max-width:800px){
-        width: 600px;
+        width: 500px;
         padding-bottom: 50px;
         display: flex;
         flex-direction: row;
@@ -412,8 +412,8 @@
     flex-direction: column;
     align-items: self-end;   
     @media screen and  (max-width:800px){
-
-        width: 300px;
+        width: 200px;
+        text-align: end;
     }
     @media screen and (min-width:800px) {
         width: 600px;
@@ -433,7 +433,7 @@
 }
 .experinceSeperate{
     @media screen and  (max-width:800px){
-        margin: 0px 30px;
+        margin: 0px 25px;
     }
     @media screen and (min-width:800px) {
         margin: 0px 70px;  
@@ -448,7 +448,7 @@
     @media screen and (max-width:800px){
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 200px;
         padding-left: 10px;
     }
     @media screen and (min-width:800px) {
@@ -466,7 +466,7 @@
 .positionBox span{
     @media screen and  (max-width:800px){
         display: block;
-        width: 200px;
+        width: 170px;
     }
     
     font-family: Athiti,sans-serif;
@@ -507,11 +507,16 @@
 }
 .seperate div{
     position: absolute;
-    top:-48px;
     left: 35%;
     color: #2196f3 ;
     font-weight: bold;
     font-size: 60px;
+    @media screen and (max-width:800px) {
+        top: -45px;
+    }
+    @media screen and (min-width:800px) {
+        top:-48px;   
+    }
 }
 .contactPlatform{
     width: 600px;
