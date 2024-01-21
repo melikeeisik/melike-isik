@@ -412,7 +412,7 @@
     flex-direction: column;
     align-items: self-end;   
     @media screen and  (max-width:800px){
-        width: 200px;
+        width: 150px;
         text-align: end;
     }
     @media screen and (min-width:800px) {
@@ -448,7 +448,7 @@
     @media screen and (max-width:800px){
         display: flex;
         flex-direction: column;
-        width: 200px;
+        width: 150px;
         padding-left: 10px;
     }
     @media screen and (min-width:800px) {
@@ -491,11 +491,17 @@
     padding-bottom: 10px; 
 }
 .contactText{
+    @media screen and (max-width:800px) {
+        width:300px;
+        text-align: justify;
+    }
+    @media screen and (min-width:800px){
+        width: 600px;
+        text-align: center;
+    }
     padding-top: 27px;
     font-size: 17px;
     color: #777;
-    width: 600px;
-    text-align: center;
     font-family: Athiti,sans-serif;
     padding-bottom: 20px;
 }
@@ -512,17 +518,24 @@
     font-weight: bold;
     font-size: 60px;
     @media screen and (max-width:800px) {
-        top: -45px;
+        top: -40px;
     }
     @media screen and (min-width:800px) {
         top:-48px;   
     }
 }
 .contactPlatform{
-    width: 600px;
+    @media screen and (max-width:800px) {
+        height: 200px;
+        padding-top: 50px;
+        row-gap: 40px;
+    }
+    @media screen and  (min-width:800px){
+        width: 600px;   
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     margin-top: 70px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 .platform{
     display: flex;
