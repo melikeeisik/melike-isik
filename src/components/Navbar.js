@@ -10,6 +10,7 @@ function Navbar({scrollToSection, sticky, page}) {
   const [screen, setScreen] = useState("")
   const list = document.getElementsByTagName("li")
   const [openMenu, setOpenMenu] = useState(false) 
+  const [openBack, setopenBack] = useState(false) 
   useEffect(() =>{
     const handleResize = () =>{
       setScreen(window.innerWidth)
@@ -33,17 +34,23 @@ function Navbar({scrollToSection, sticky, page}) {
 
   const handleMenu = () =>{
     setOpenMenu(true)
+    openBack 
+      ? setopenBack(false)
+      : setopenBack(true)
   }
 
+  console.log(openMenu)
   return (
     <div>
       <div className={sticky ? style.headerSticky : style.header}>
             <div className={style.headerIcon}>
                 <FontAwesomeIcon icon="fa-solid fa-star" /> 
             </div>
+            <div style={{display: openBack ? "block" : "none" }} className={style.mobileListBackground}>
+            </div>
             <div className={style.headerList}>
                 <input type="checkbox" id='menu-toggle' className={style.menuToggle}/>
-                <ul className={style.menu} style={{display:screen <800 && !openMenu  ? "none" :"flex" }} > 
+                <ul className={style.menu} style={{display:screen <800 && !openMenu  ? "none" :"flex" , borderTop: openBack ? "1px solid #222" : "" }} > 
                     <li onClick={() => scrollToSection("anasayfa")} >Anasayfa</li>
                     <li onClick={() => scrollToSection("hakkimda")} >Hakkımda</li>
                     <li onClick={() => scrollToSection("deneyim")} >Deneyimlerim</li>
