@@ -401,11 +401,10 @@
 }
 .experinceBox{
     @media screen and  (max-width:800px){
-        width: 500px;
+        width: 100%;
         padding-bottom: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        display: grid;
+       grid-template-columns: 1.4fr 0.2fr 1.4fr;
     }
     @media screen and (min-width:800px) {
         width: 100%;
@@ -421,7 +420,6 @@
     flex-direction: column;
     align-items: self-end;   
     @media screen and  (max-width:800px){
-        width: 150px;
         text-align: end;
     }
     @media screen and (min-width:800px) {
@@ -442,7 +440,7 @@
 }
 .experinceSeperate{
     @media screen and  (max-width:800px){
-        margin: 0px 25px;
+        margin: 0px 15px;
     }
     @media screen and (min-width:800px) {
         margin: 0px 70px;  
@@ -457,7 +455,6 @@
     @media screen and (max-width:800px){
         display: flex;
         flex-direction: column;
-        width: 150px;
         padding-left: 10px;
     }
     @media screen and (min-width:800px) {
@@ -475,7 +472,7 @@
 .positionBox span{
     @media screen and  (max-width:800px){
         display: block;
-        width: 170px;
+        width: 160px;
     }
     
     font-family: Athiti,sans-serif;
