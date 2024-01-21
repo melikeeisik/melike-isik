@@ -62,17 +62,17 @@ function App() {
     setPage(pageNameList[0])
     if(minPage){
       switch (true) {
-        case scrollPosition >=4000:
+        case scrollPosition >=3000:
           setPage(pageNameList[3])
           break;
-        case scrollPosition >= 3100:
+        case scrollPosition >= 2000:
           setPage(pageNameList[2]);
           break;
-        case scrollPosition >= 2000:
+        case scrollPosition >= 100:
           setPage(pageNameList[1]);
           setHeaderSticky(true);
           break
-        case scrollPosition >= 80:
+        case scrollPosition >= 5:
           setHeaderSticky(true)
           setPage(pageNameList[0]);
           break;
