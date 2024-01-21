@@ -296,9 +296,9 @@
 }
 .cvSubtitle{
     @media screen and (max-width:800px) {
-        margin-left: -30px;   
+        margin-left: 0px;   
         text-align: justify;
-        width:420px
+        width:100%
     }
     font-size: 17px;
     color: #777;
@@ -337,10 +337,15 @@
     cursor: pointer;
 }
 .skillsContainer{
+    @media screen and (max-width:800px) {
+        width: 350px;
+    }
+    @media screen and (min-width:800px) {
+        width: 500px;
+    }
     padding-top: 80px;
     display: flex;
     flex-direction: column;
-    width: 500px;
 }
 .skillsContainer h2{
     font-weight: 600;
