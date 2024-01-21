@@ -309,7 +309,7 @@
     @media screen and (max-width:800px) {
         display: flex;
         flex-direction: column;
-        height: 100px;
+        height: 110px;
         justify-content: space-between;
     }
     @media screen and (min-width:800px) {

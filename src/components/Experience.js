@@ -30,7 +30,7 @@ function Experience() {
                 <div style={{position:"relative"}}>
                     <FontAwesomeIcon style={{color:"#2196f3", position:"absolute", top:"20px",fontSize:"20px"}} icon="fa-circle" />
                     <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left: minPage ? "2.5px":"3px"}}></div>
-                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height: minPage ? "150px": "100px", position:"absolute",left:"10px",top:"40px"}}/>
+                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height: minPage ? "160px": "100px", position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>
             <div className={style.positionBox}>

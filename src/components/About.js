@@ -31,7 +31,7 @@ function About({scrollToSection}) {
             <button onClick={openPDFViewer}  className={style.showCv}>
               CV'Mİ GÖRÜNTÜLE
             </button>
-            <button  onClick={() => scrollToSection("iletisim")} className={style.contact}>İLETİŞME GEÇELİM</button>
+            <button  onClick={() => scrollToSection("iletisim")} className={style.contact}>İLETİŞİME GEÇELİM</button>
           </div>
         </div>
       </div>
