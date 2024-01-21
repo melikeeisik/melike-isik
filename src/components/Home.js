@@ -25,7 +25,7 @@ function Home({scrollToSection}) {
         <div className={style.home}>
             <div className={style.homeBackground}></div>
             <div className={style.homeContainer}>
-                <p>{myName}</p>
+                <p className={style.myName}>{myName}</p>
                 <div className={style.socialMediaContainer}>
                     <a target='_self' href='https://github.com/melikeeisik'>
                         <FontAwesomeIcon color='#fff' icon="fa-brands fa-github" />
