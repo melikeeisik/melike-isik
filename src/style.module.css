@@ -476,11 +476,17 @@
 .contactPage{
     display: flex;
     flex-direction: column;
-    margin: auto;
     align-items: center;
     padding-top: 100px;
-    width: 500px;
     padding-bottom: 100px;
+    @media screen and (max-width:800px) {
+        width: 100%;
+        justify-content: center;
+    }
+    @media screen and (min-width:800px) {
+        margin: auto;
+        width: 500px;
+    }
 }
 .contactTitle {
     position: relative;
