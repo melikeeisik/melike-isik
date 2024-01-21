@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from "../style.module.css"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCircle } from '@fortawesome/free-solid-svg-icons'
 library.add( faCircle)
 function Experience() {
+    const [minPage , setMinPage] = useState(false)
+    useEffect(() =>{
+        setMinPage(false)
+        window.innerWidth<800
+            ? setMinPage(true)
+            : setMinPage(false)
+    }, [])
   return (
     <div className={style.experince}>
       <div className={style.pageTitle}>
@@ -22,8 +29,8 @@ function Experience() {
             <div className={style.experinceSeperate}>
                 <div style={{position:"relative"}}>
                     <FontAwesomeIcon style={{color:"#2196f3", position:"absolute", top:"20px",fontSize:"20px"}} icon="fa-circle" />
-                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:"3px"}}></div>
-                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height:"100px", position:"absolute",left:"10px",top:"40px"}}/>
+                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left: minPage ? "2.5px":"3px"}}></div>
+                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height: minPage ? "150px": "100px", position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>
             <div className={style.positionBox}>
@@ -43,8 +50,8 @@ function Experience() {
             <div className={style.experinceSeperate}>
                 <div style={{position:"relative"}}>
                     <FontAwesomeIcon style={{color:"#2196f3", position:"absolute",top:"20px", fontSize:"20px"}} icon="fa-circle" />
-                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:"3px"}}></div>
-                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height:"100px", position:"absolute",left:"10px",top:"40px"}}/>
+                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:  minPage ? "2.5px":"3px"}}></div>
+                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height: minPage ? "150px":"100px", position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>
             <div className={style.positionBox}>
@@ -58,14 +65,14 @@ function Experience() {
         </div>
         <div className={style.experinceBox}>
             <div className={style.companyBox}>
-                <h2 >Tübitak Uzay Teknolojileri Araştırma Ensitüsü</h2>
+                <h2 style={{textAlign:minPage?"end" : ""}} >Tübitak Uzay Teknolojileri Araştırma Ensitüsü</h2>
                 <a target='_blank' href='https://uzay.tubitak.gov.tr/'>uzay.tubitak.gov.tr</a>
             </div>
             <div className={style.experinceSeperate}>
                 <div style={{position:"relative"}}>
                 <FontAwesomeIcon style={{color:"#2196f3", position:"absolute", top:"20px",fontSize:"20px"}} icon="fa-circle" />
-                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left:"3px"}}></div>
-                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height:"120px", position:"absolute",left:"10px",top:"40px"}}/>
+                    <div style={{position:"absolute", backgroundColor:"#fff",width:"15px", height:"15px", borderRadius:"999px",top:"22.5px", left: minPage ? "2.5px" :"3px"}}></div>
+                    <div style={{backgroundColor:"#2196f3",width:"0.5px" , height: minPage ? "180px":"120px", position:"absolute",left:"10px",top:"40px"}}/>
                 </div>
             </div>
             <div className={style.positionBox}>
@@ -80,7 +87,7 @@ function Experience() {
         </div>
         <div className={style.experinceBox}>
             <div className={style.companyBox}>
-                <h2 >Tübitak Uzay Teknolojileri Araştırma Ensitüsü</h2>
+                <h2 style={{textAlign:minPage?"end" : ""}} >Tübitak Uzay Teknolojileri Araştırma Ensitüsü</h2>
                 <a target='_blank' href='https://uzay.tubitak.gov.tr/'>uzay.tubitak.gov.tr</a>
             </div>
             <div className={style.experinceSeperate}>
